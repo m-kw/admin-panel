@@ -1,0 +1,30 @@
+/* Buttons */
+
+.btn {
+  display: block;
+  width: auto;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0 25px;
+  color: $body-background;
+  background-color: $btn-color-light;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $orange-hover;
+  }
+}
+
+.btn-dark {
+  background-color: $btn-color-dark;
+
+  &:hover {
+    background-color: $btn-dark-hover;
+    cursor: pointer;
+  }
+}
+
+.btn-disabled {
+  background-color: $btn-disabled;
+}

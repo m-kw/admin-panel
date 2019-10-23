@@ -1,0 +1,23 @@
+/* Icons */
+
+.icon-wrapper {
+  width: 40px;
+  height: 50px;
+  padding: 5px;
+  margin: 0;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $body-background;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

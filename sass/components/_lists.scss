@@ -1,0 +1,16 @@
+ul {
+  li {
+    list-style-type: none;
+    a {
+      color: $color-header;
+
+      &:hover {
+        color: $container-background;
+      }
+
+      &:active {
+        color: $container-background;
+      }
+    }
+  }
+}
