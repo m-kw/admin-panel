@@ -1,6 +1,12 @@
 /* Colors */
 /* Font sizes */
 /* Fonts */
+@font-face {
+  font-family: 'Glyphter';
+  src: local("Glyphter") url("vendor/icon-font/fonts/Glyphter.eot") format("opentype");
+  src: local("Glyphter") url("vendor/icon-font/fonts/Glyphter.ttf") format("truetype");
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -361,7 +367,7 @@ body {
 .row {
   display: -ms-flexbox;
   display: flex;
-  background-color: #F5F5F2;
+  background-color: #ffffff;
   padding: 20px;
 }
 
@@ -374,8 +380,8 @@ h1 {
 
 h2 {
   font-size: 16px;
+  margin: 0;
   color: #979797;
-  text-transform: uppercase;
 }
 
 a {
@@ -390,18 +396,19 @@ a:hover {
 
 /* Components */
 /* Buttons */
-.btn {
+button {
   display: block;
   width: auto;
   height: 40px;
   border: 1px solid;
   border-radius: 5px;
   padding: 0 25px;
+  margin: 20px;
   color: #E3E3E3;
   background-color: #F58220;
 }
 
-.btn:hover {
+button:hover {
   cursor: pointer;
   background-color: #FFA200;
 }
@@ -416,7 +423,7 @@ a:hover {
 }
 
 .btn-disabled {
-  background-color: #E3E3E3;
+  background-color: #F5F5F2;
 }
 
 /* Icons */
@@ -430,7 +437,7 @@ a:hover {
 
 .icon-wrapper:hover {
   cursor: pointer;
-  background-color: #E3E3E3;
+  background-color: #F5F5F2;
 }
 
 .icon-wrapper .icon {
@@ -440,6 +447,7 @@ a:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  font-family: "Glyphter", sans-serif;
 }
 
 ul li {
@@ -451,11 +459,64 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #F5F5F2;
+  color: #ffffff;
 }
 
 ul li a:active {
-  color: #F5F5F2;
+  color: #ffffff;
+}
+
+table {
+  width: 80%;
+  margin: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table tr:hover {
+  background-color: #F5F5F2;
+  cursor: pointer;
+}
+
+table td {
+  vertical-align: middle;
+  padding: 20px;
+  border-bottom: 1.5px solid #E3E3E3;
+  border-top: 1.5px solid #E3E3E3;
+}
+
+.tab {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  line-height: 2;
+}
+
+.tab:hover {
+  cursor: pointer;
+  background-color: #F5F5F2;
+}
+
+.tab .circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #56819F;
+  border-radius: 100%;
+  margin: 0 15px;
+}
+
+.tab p {
+  display: inline;
+}
+
+.circle-orange {
+  background-color: #F58220;
+}
+
+.circle-green {
+  background-color: #04AE00;
 }
 
 /* Sections */

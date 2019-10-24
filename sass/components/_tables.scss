@@ -1,0 +1,21 @@
+table {
+  width: 80%;
+  margin: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  tr {
+    &:hover {
+      background-color: $btn-disabled;
+      cursor: pointer;
+    }
+  }
+
+  td {
+    vertical-align: middle;
+    padding: 20px;
+    border-bottom: 1.5px solid $body-background;
+    border-top: 1.5px solid $body-background;
+  }
+
+}

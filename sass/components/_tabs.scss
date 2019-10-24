@@ -1,0 +1,33 @@
+.tab {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  line-height: 2;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $btn-disabled;
+  }
+
+  .circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: $links-color;
+    border-radius: 100%;
+    margin: 0 15px;
+  }
+
+  p {
+    display: inline;
+  }
+}
+
+.circle-orange {
+  background-color: $btn-color-light;
+}
+
+.circle-green {
+  background-color: #04AE00;
+}
