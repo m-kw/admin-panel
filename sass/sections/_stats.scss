@@ -1,3 +1,20 @@
-.calendar, .chart {
-  margin: 0 auto;
+.calendar {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+
+  .date-picker {
+    border: 1px solid $body-background;
+    padding: 5px;
+
+    input {
+      padding: 10px;
+      border: none;
+      border-right: 1px solid $body-background;
+    }
+  }
+
+  button {
+    margin: 15px;
+  }
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin-panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -59,7 +60,12 @@
             <h2>General statistic</h2>
           </div>
           <div class="row calendar">
-            calendar
+            <div class="date-picker">
+              <input type="text" name="start-date">
+              <input type="text" name="end-date">
+              <img src="images/icons/calendar.svg" class="icon">
+            </div>
+            <button><img src="images/icons/refresh.svg" class="icon"></button>
           </div>
           <div class="row chart">
             chart
@@ -103,6 +109,8 @@
       </section>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
   </body>
 </html>

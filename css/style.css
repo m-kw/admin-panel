@@ -415,7 +415,7 @@ button {
   height: 40px;
   border: 1px solid;
   border-radius: 5px;
-  padding: 0 25px;
+  padding: 0 15px;
   margin: 20px auto;
   color: #E3E3E3;
   background-color: #F58220;
@@ -620,8 +620,28 @@ aside {
   margin: 0 10px;
 }
 
-.calendar, .chart {
-  margin: 0 auto;
+.calendar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+}
+
+.calendar .date-picker {
+  border: 1px solid #E3E3E3;
+  padding: 5px;
+}
+
+.calendar .date-picker input {
+  padding: 10px;
+  border: none;
+  border-right: 1px solid #E3E3E3;
+}
+
+.calendar button {
+  margin: 15px;
 }
 
 /* Pages/Views */
