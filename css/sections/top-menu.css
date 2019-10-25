@@ -1,0 +1,28 @@
+.top-menu-wrapper {
+  position: fixed;
+  width: calc(100% - 250px);
+  height: 50px;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+}
+
+.top-menu .icon-wrapper {
+  display: flex;
+  align-items: baseline;
+  border-left: 1px solid #E3E3E3;
+}
+
+.top-menu .icon-wrapper h2, .top-menu .icon-wrapper p {
+  margin: 0 10px;
+}
+
+/*# sourceMappingURL=top-menu.css.map */

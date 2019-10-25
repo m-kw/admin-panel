@@ -441,11 +441,9 @@ button:hover {
 
 /* Icons */
 .icon-wrapper {
-  width: 40px;
+  width: auto;
   height: 50px;
-  padding: 5px;
-  margin: 0;
-  position: relative;
+  padding: 15px;
 }
 
 .icon-wrapper:hover {
@@ -591,12 +589,35 @@ aside {
   text-align: center;
 }
 
-nav {
+.top-menu-wrapper {
   position: fixed;
   width: calc(100% - 250px);
   height: 50px;
   top: 0;
   right: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.top-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  width: auto;
+}
+
+.top-menu .icon-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  border-left: 1px solid #E3E3E3;
+}
+
+.top-menu .icon-wrapper h2, .top-menu .icon-wrapper p {
+  margin: 0 10px;
 }
 
 .calendar, .chart {
