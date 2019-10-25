@@ -14,11 +14,11 @@ body {
   max-width: 700px;
   margin: 0 auto;
   padding: 0 20px;
+  background-color: $container-background;
 }
 
 .row {
   display: flex;
-  background-color: $container-background;
   padding: 20px;
 }
 
@@ -26,11 +26,17 @@ h1 {
   font-size: 18px;
   margin: 0;
   color: $color-header;
-  text-transform: uppercase;
 }
 
 h2 {
   font-size: 16px;
+  margin: 0;
+  color: $color-header;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 14px;
   margin: 0;
   color: $color-header;
 }

@@ -11,13 +11,9 @@
     cursor: pointer;
     background-color: $btn-disabled;
   }
+}
 
-  .icon {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+.icon {
+  width: 18px;
+  height: 18px;
 }

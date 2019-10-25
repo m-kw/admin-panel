@@ -362,12 +362,12 @@ body {
   max-width: 700px;
   margin: 0 auto;
   padding: 0 20px;
+  background-color: #ffffff;
 }
 
 .row {
   display: -ms-flexbox;
   display: flex;
-  background-color: #ffffff;
   padding: 20px;
 }
 
@@ -375,11 +375,17 @@ h1 {
   font-size: 18px;
   margin: 0;
   color: #979797;
-  text-transform: uppercase;
 }
 
 h2 {
   font-size: 16px;
+  margin: 0;
+  color: #979797;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 14px;
   margin: 0;
   color: #979797;
 }
@@ -440,14 +446,9 @@ button:hover {
   background-color: #F5F5F2;
 }
 
-.icon-wrapper .icon {
+.icon {
   width: 18px;
   height: 18px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Glyphter", sans-serif;
 }
 
 ul li {
@@ -520,5 +521,25 @@ table td {
 }
 
 /* Sections */
+aside {
+  position: relative;
+  background-color: #000000;
+  height: 100vh;
+  width: 10vw;
+  padding: 20px;
+}
+
+.page-title {
+  display: inline;
+}
+
+.toggle-menu {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  filter: invert(0.5);
+}
+
 /* Pages/Views */
 /*# sourceMappingURL=style.css.map */
