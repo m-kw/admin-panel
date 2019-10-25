@@ -1,19 +1,56 @@
 aside {
-  position: relative;
+  position: fixed;
   background-color: #000000;
   height: 100vh;
-  width: 10vw;
+  width: 250px;
   padding: 20px;
 }
 
 .page-title {
   display: inline;
+  color: #ffffff;
+  font-family: $font-logo;
+  font-size: 20px;
 }
 
 .toggle-menu {
-  display: inline-block;
+  display: inline;
   position: absolute;
   right: 20px;
   top: 20px;
   filter: invert(0.5);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav-menu {
+  li {
+    padding: 10px 20px;
+
+    &:hover {
+      border-left: 3px solid $btn-color-light;
+    }
+  }
+}
+
+.manager {
+  h3 {
+    margin: 10px 10px 10px 0;
+  }
+
+  .manager-pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    display: inline-block;
+    float: left;
+  }
+
+  p {
+    display: inline-block;
+    margin-left: 10px;
+  }
 }

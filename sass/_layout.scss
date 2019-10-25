@@ -8,18 +8,25 @@ body {
   font-size: 14px;
   line-height: 1.7;
   color: $color-dark;
+  display: flex;
 }
 
 .container {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0 20px;
-  background-color: $container-background;
+  width: calc(100% - 250px);
+  top: 50px;
+  left: 250px;
+  padding: 0 20px 20px 20px;
+  position: absolute;
 }
 
 .row {
-  display: flex;
-  padding: 20px;
+  background-color: $container-background;
+  margin: 1px auto;
+  padding: 15px;
+}
+
+.section-title {
+  margin-top: 15px;
 }
 
 h1 {

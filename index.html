@@ -4,26 +4,88 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin-panel</title>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
     <aside class="sidebar">
-      <h1 class="page-title">Just do it</h1>
-      <img src="images/icons/details.svg" class="icon toggle-menu">
+      <div class="intro">
+        <h1 class="page-title">Just do it</h1>
+        <img src="images/icons/details.svg" class="icon toggle-menu">
+        <ul class="nav-menu">
+          <li><a href="#">General</a></li>
+          <li><a href="#">Details</a></li>
+          <li><a href="#">Links</a></li>
+          <li><a href="#">Banners</a></li>
+          <li><a href="#">Personal data</a></li>
+          <li><a href="#">Payout</a></li>
+          <li><a href="#">Postback</a></li>
+        </ul>
+      </div>
+      <div class="manager">
+        <h3>Your manager</h3>
+        <div class="manager-details">
+          <img src="images/manager.jpeg" class="manager-pic">
+          <p>Kristine</p>
+        </div>
+      </div>
     </aside>
-    
+
     <div class="container">
 
-      <div class="row">
-        <div class="menu">
+      <nav class="row navigation">
+        navigation
+      </nav>
+
+      <section class="stats">
+          <div class="row section-title">
+            <h2>General statistic</h2>
+          </div>
+          <div class="row calendar">
+            calendar
+          </div>
+          <div class="row chart">
+            chart
+          </div>
+        </section>
+
+      <section class="links">
+        <div class="row section-title">
+          <h2>Links</h2>
         </div>
+        <div class="row link-table">
+          <button>+ add new</button>
+          <table>
+            <tr>
+              <td><h3>Home page</h3></td>
+              <td><a href="#">http://homepage.com</a></td>
+            </tr>
+            <tr>
+              <td><h3>Home page</h3></td>
+              <td><a href="#">http://homepage.com</a></td>
+            </tr>
+            <tr>
+              <td><h3>Home page</h3></td>
+              <td><a href="#">http://homepage.com</a></td>
+            </tr>
+            <tr>
+              <td><h3>Home page</h3></td>
+              <td><a href="#">http://homepage.com</a></td>
+            </tr>
+            <tr>
+              <td><h3>Home page</h3></td>
+              <td><a href="#">http://homepage.com</a></td>
+            </tr>
+            <tr>
+              <td><h3>Home page</h3></td>
+              <td><a href="#">http://homepage.com</a></td>
+            </tr>
+          </table>
+          <button>+ add new</button>
+        </div>
+      </section>
 
-        <section class="stats">
-        </section>
-
-        <section class="links">
-        </section>
-      </div>
     </div>
 
   </body>
