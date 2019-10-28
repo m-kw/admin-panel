@@ -693,6 +693,27 @@ aside {
   margin: 15px;
 }
 
+.chart table {
+  border-spacing: 30px;
+  border-collapse: separate;
+}
+
+.chart table td {
+  border-top: none;
+  position: relative;
+  padding: 0;
+}
+
+.chart table td h3, .chart table td p {
+  display: inline;
+}
+
+.chart table td p {
+  position: absolute;
+  right: 0;
+  margin: 0;
+}
+
 /* Pages/Views */
 /* Media */
 @media (max-width: 691px) {

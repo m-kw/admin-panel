@@ -18,3 +18,27 @@
     margin: 15px;
   }
 }
+
+.chart {
+
+  table {
+    border-spacing: 30px;
+    border-collapse: separate;
+
+    td {
+      border-top: none;
+      position: relative;
+      padding: 0;
+
+      h3, p {
+        display: inline;
+      }
+
+      p {
+        position: absolute;
+        right: 0;
+        margin: 0;
+      }
+    }
+  }
+}
