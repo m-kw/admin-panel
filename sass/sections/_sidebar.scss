@@ -1,27 +1,35 @@
 aside {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   background-color: #000000;
   height: 100vh;
   width: 250px;
   padding: 20px;
 }
 
-.page-title {
-  display: inline;
-  color: #ffffff;
-  font-family: $font-logo;
-  font-size: 20px;
-}
-
-.toggle-menu {
-  display: inline;
+.intro {
   position: absolute;
-  right: 20px;
-  top: 20px;
-  filter: invert(0.5);
+  top: 0;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 
-  &:hover {
-    cursor: pointer;
+  .page-title {
+    color: #ffffff;
+    font-family: $font-logo;
+    font-size: 20px;
+    margin-right: 80px;
+  }
+
+  .toggle-menu {
+    filter: invert(0.5);
+
+    &:hover {
+      filter: invert(1);
+      cursor: pointer;
+    }
   }
 }
 
@@ -53,4 +61,37 @@ aside {
     display: inline-block;
     margin-left: 10px;
   }
+}
+
+.side-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+
+  .icon-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    &:hover {
+      background-color: inherit;
+    }
+
+    h2, p {
+      margin: 0 10px;
+    }
+
+    .icon {
+      filter: invert(0.5);
+
+      &:hover {
+        filter: invert(1);
+      }
+    }
+  }
+
+  .employee {
+    order: -1;
+  }
+
 }

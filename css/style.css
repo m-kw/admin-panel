@@ -533,28 +533,41 @@ table td {
 /* Sections */
 aside {
   position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   background-color: #000000;
   height: 100vh;
   width: 250px;
   padding: 20px;
 }
 
-.page-title {
-  display: inline;
+.intro {
+  position: absolute;
+  top: 0;
+  margin: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+}
+
+.intro .page-title {
   color: #ffffff;
   font-family: "Satisfy", cursive;
   font-size: 20px;
+  margin-right: 80px;
 }
 
-.toggle-menu {
-  display: inline;
-  position: absolute;
-  right: 20px;
-  top: 20px;
+.intro .toggle-menu {
   filter: invert(0.5);
 }
 
-.toggle-menu:hover {
+.intro .toggle-menu:hover {
+  filter: invert(1);
   cursor: pointer;
 }
 
@@ -583,6 +596,42 @@ aside {
 .manager p {
   display: inline-block;
   margin-left: 10px;
+}
+
+.side-menu {
+  display: none;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  position: absolute;
+  bottom: 0;
+}
+
+.side-menu .icon-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.side-menu .icon-wrapper:hover {
+  background-color: inherit;
+}
+
+.side-menu .icon-wrapper h2, .side-menu .icon-wrapper p {
+  margin: 0 10px;
+}
+
+.side-menu .icon-wrapper .icon {
+  filter: invert(0.5);
+}
+
+.side-menu .icon-wrapper .icon:hover {
+  filter: invert(1);
+}
+
+.side-menu .employee {
+  -ms-flex-order: -1;
+      order: -1;
 }
 
 .link-table {
@@ -645,4 +694,50 @@ aside {
 }
 
 /* Pages/Views */
+/* Media */
+@media (max-width: 691px) {
+  aside {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+  }
+  aside .mobile-wrapper {
+    display: none;
+  }
+  aside .intro {
+    position: relative;
+  }
+  aside .intro .toggle-menu {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+  }
+  .container {
+    width: 100%;
+    left: 0;
+  }
+  .top-menu-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 833px) {
+  .calendar {
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .calendar .date-picker {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .calendar .date-picker input {
+    border: none;
+    border-bottom: 1px solid #E3E3E3;
+  }
+  .calendar .date-picker .icon {
+    margin: 5px auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
