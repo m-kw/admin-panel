@@ -20,6 +20,7 @@
 }
 
 .chart {
+  text-align: -webkit-center;
 
   table {
     border-spacing: 30px;
@@ -40,5 +41,11 @@
         margin: 0;
       }
     }
+  }
+
+  .chart-heading {
+    text-align: initial;
+    margin: 10px;
+    margin-left: 50px;
   }
 }

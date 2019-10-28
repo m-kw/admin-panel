@@ -11,3 +11,12 @@
   url('vendor/icon-font/fonts/Glyphter.ttf')
   format('truetype');
 }
+
+@mixin circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: $links-color;
+  border-radius: 100%;
+  margin: 0 15px;
+}

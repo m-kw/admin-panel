@@ -4,19 +4,17 @@
   height: 50px;
   padding: 10px;
   line-height: 2;
+  background-color: $btn-disabled;
 
+//to remove when add js
   &:hover {
     cursor: pointer;
-    background-color: $btn-disabled;
+    background-color: #ffffff;
   }
 
-  .circle {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: $links-color;
-    border-radius: 100%;
-    margin: 0 15px;
+  &.active {
+    cursor: pointer;
+    background-color: #ffffff;
   }
 
   p {
@@ -24,10 +22,21 @@
   }
 }
 
+.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: $links-color;
+  border-radius: 100%;
+  margin: 0 15px;
+}
+
 .circle-orange {
+  @include circle;
   background-color: $btn-color-light;
 }
 
 .circle-green {
+  @include circle;
   background-color: #04AE00;
 }
