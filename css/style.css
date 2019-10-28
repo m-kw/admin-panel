@@ -353,7 +353,7 @@ template {
 body {
   margin: 0;
   background-color: #E3E3E3;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
   color: #333333;
   display: -ms-flexbox;
@@ -372,27 +372,29 @@ body {
   background-color: #ffffff;
   margin: 1px auto;
   padding: 15px;
+  text-align: center;
 }
 
 .section-title {
   margin-top: 15px;
+  text-align: left;
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
   color: #979797;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 18px;
   margin: 0;
   color: #979797;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 17px;
   margin: 0;
   color: #979797;
 }
@@ -548,6 +550,27 @@ table td {
   background-color: #04AE00;
 }
 
+form label {
+  display: inline-block;
+  margin: 15px;
+}
+
+form input {
+  margin: 15px;
+  padding: 5px;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+}
+
+form input:focus {
+  outline: 1px solid #979797;
+  cursor: pointer;
+}
+
+form .row {
+  padding: 30px;
+}
+
 /* Sections */
 aside {
   position: fixed;
@@ -656,11 +679,11 @@ aside {
   text-align: center;
 }
 
-img {
+.link-table img {
   display: none;
 }
 
-img:hover {
+.link-table img:hover {
   filter: invert(61%) sepia(71%) saturate(2298%) hue-rotate(346deg) brightness(98%) contrast(96%);
 }
 
@@ -710,7 +733,16 @@ img:hover {
 
 .calendar .date-picker {
   border: 1px solid #E3E3E3;
+  border-radius: 5px;
   padding: 5px;
+}
+
+.calendar .date-picker:hover {
+  outline: 1px solid #979797;
+}
+
+.calendar .date-picker .icon:hover {
+  cursor: pointer;
 }
 
 .calendar .date-picker input {
@@ -732,10 +764,20 @@ img:hover {
   border-collapse: separate;
 }
 
+.chart table tr:hover {
+  background-color: inherit;
+  cursor: auto;
+}
+
 .chart table td {
   border-top: none;
   position: relative;
   padding: 0;
+}
+
+.chart table td:hover {
+  background-color: #F5F5F2;
+  cursor: pointer;
 }
 
 .chart table td h3, .chart table td p {

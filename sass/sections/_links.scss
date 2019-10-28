@@ -1,12 +1,12 @@
 .link-table {
   text-align: center;
-}
 
-img {
-  display: none;
+  img {
+    display: none;
 
-  &:hover {
-    filter: invert(61%) sepia(71%) saturate(2298%) hue-rotate(346deg) brightness(98%) contrast(96%);
+    &:hover {
+      filter: invert(61%) sepia(71%) saturate(2298%) hue-rotate(346deg) brightness(98%) contrast(96%);
+    }
   }
 }
 

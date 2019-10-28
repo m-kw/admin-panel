@@ -5,7 +5,16 @@
 
   .date-picker {
     border: 1px solid $body-background;
+    border-radius: 5px;
     padding: 5px;
+
+    &:hover {
+      outline: 1px solid $color-header;
+    }
+
+    .icon:hover {
+      cursor: pointer;
+    }
 
     input {
       padding: 10px;
@@ -26,10 +35,20 @@
     border-spacing: 30px;
     border-collapse: separate;
 
+    tr:hover {
+      background-color: inherit;
+      cursor: auto;
+    }
+
     td {
       border-top: none;
       position: relative;
       padding: 0;
+
+      &:hover {
+        background-color: $btn-disabled;
+        cursor: pointer;
+      }
 
       h3, p {
         display: inline;
