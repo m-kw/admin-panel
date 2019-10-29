@@ -459,9 +459,7 @@ button:hover {
 }
 
 i {
-  width: auto;
-  height: 50px;
-  padding: 15px;
+  padding: 5px;
 }
 
 i:hover {
@@ -497,7 +495,23 @@ table {
   text-align: left;
 }
 
-table tr:hover {
+table thead th {
+  font-size: 17px;
+  margin: 0;
+  color: #979797;
+  vertical-align: middle;
+  padding: 20px;
+  border-bottom: 1.5px solid #E3E3E3;
+  border-top: 1.5px solid #E3E3E3;
+}
+
+table thead th:hover {
+  background-color: #F5F5F2;
+  color: #000000;
+  cursor: pointer;
+}
+
+table tbody tr:hover {
   background-color: #F5F5F2;
   cursor: pointer;
 }
@@ -833,6 +847,23 @@ aside {
   text-align: initial;
   margin: 10px;
   margin-left: 50px;
+}
+
+.detail-table {
+  overflow-x: auto;
+}
+
+.detail-table table {
+  width: 100%;
+}
+
+.detail-table table i {
+  display: none;
+  font-size: 10px;
+}
+
+.detail-table table th:hover i {
+  display: inline-block;
 }
 
 /* Pages/Views */

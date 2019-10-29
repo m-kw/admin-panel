@@ -1,0 +1,16 @@
+.detail-table {
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+
+    i {
+      display: none;
+      font-size: 10px;
+    }
+
+    th:hover i {
+      display: inline-block;
+    }
+  }
+}
