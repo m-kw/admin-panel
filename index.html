@@ -6,6 +6,7 @@
     <title>admin-panel</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/css/Glyphter.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -77,7 +78,7 @@
       </div>
 
       <div id="pages">
-        <section class="stats">
+        <section id="stats">
           <div class="row section-title">
             <h2>General statistic</h2>
           </div>
@@ -313,6 +314,36 @@
               <button>Save</button>
             </div>
           </form>
+        </section>
+
+        <section id="details">
+          <div class="row section-title">
+            <h2>Detail statistic</h2>
+          </div>
+          <div class="row calendar">
+            <div class="date-picker">
+              <input type="text" name="start-date">
+              <input type="text" name="end-date">
+              <img src="images/icons/calendar.svg" class="icon">
+            </div>
+            <button><img src="images/icons/refresh.svg" class="icon"></button>
+          </div>
+          <div class="row detail-table">
+            table
+          </div>
+          <div class="row pagination">
+            <i class="icon-arrow-left"></i>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <i class="icon-arrow-right"></i>
+          </div>
         </section>
       </div>
 
