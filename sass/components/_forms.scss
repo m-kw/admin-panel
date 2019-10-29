@@ -1,19 +1,25 @@
 form {
 
-  label {
-    display: inline-block;
-    margin: 15px;
-  }
+  .form-field {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 10px auto;
 
-  input {
-    margin: 15px;
-    padding: 5px;
-    border: 1px solid $body-background;
-    border-radius: 5px;
+    label {
+      text-align: left;
+      min-width: 150px;
+    }
 
-    &:focus {
-      outline: 1px solid $color-header;
-      cursor: pointer;
+    input {
+      padding: 7px;
+      border: 1px solid $body-background;
+      border-radius: 5px;
+
+      &:focus {
+        outline: 1px solid $color-header;
+        cursor: pointer;
+      }
     }
   }
 
