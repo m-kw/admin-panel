@@ -33,3 +33,8 @@
   border-bottom: 1.5px solid $body-background;
   border-top: 1.5px solid $body-background;
 }
+
+@mixin focus {
+  outline: 1px solid $color-header;
+  cursor: pointer;
+}

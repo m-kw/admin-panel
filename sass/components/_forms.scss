@@ -17,8 +17,7 @@ form {
       border-radius: 5px;
 
       &:focus {
-        outline: 1px solid $color-header;
-        cursor: pointer;
+        @include focus;
       }
     }
   }
