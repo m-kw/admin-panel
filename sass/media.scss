@@ -8,15 +8,43 @@
 
     .mobile-wrapper {
       display: none;
+      height: 100%;
+
+      &.active {
+        display: block;
+        position: fixed;
+        background-color: inherit;
+        top: 50px;
+        left: 0;
+        padding: 10px;
+
+      }
     }
 
     .intro {
-      position: relative;
+      position: absolute;
+      width: 100%;
+      margin: 10px 0;
+      left: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
 
-      .toggle-menu {
-        position: absolute;
-        top: 5px;
-        right: 20px;
+    .nav-menu {
+      margin-top: 0;
+
+      li {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    .side-menu {
+      display: flex;
+
+      .icon-wrapper {
+        height: auto;
       }
     }
   }
@@ -42,6 +70,23 @@
         text-align: center;
       }
     }
+  }
+
+  .link-table, .chart {
+    table {
+      width: 95%;
+      tr {
+        display: flex;
+        flex-direction: column;
+      }
+      td {
+        text-align: center;
+      }
+    }
+  }
+
+  .calendar button {
+    margin: 0;
   }
 
 }

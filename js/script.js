@@ -2,10 +2,15 @@ const select = {
   dateWidget: {
     startDateInput: 'input[name="start-date"]',
     endDateInput: 'input[name="end-date"]',
-  }
+  },
+  menu: {
+    menuWidget: '.intro i',
+    mobileMenu: '.mobile-wrapper',
+  },
 }
 
 initPlugin();
+menuClickHandler();
 
 function initPlugin() {
   const startDateInput = document.querySelectorAll(select.dateWidget.startDateInput);
@@ -27,4 +32,15 @@ function initPlugin() {
       firstDayOfWeek: 1
     },
   })
+}
+
+function menuClickHandler() {
+  const menuWidget = document.querySelector(select.menu.menuWidget);
+  const mobileMenu = document.querySelector(select.menu.mobileMenu)
+
+  menuWidget.addEventListener('click', function() {
+    console.log('menu clicked');
+
+    mobileMenu.classList.toggle('active');
+  });
 }

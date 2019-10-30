@@ -23,6 +23,8 @@ table {
   tbody {
 
     tr {
+      position: relative;
+
       &:hover {
         background-color: $btn-disabled;
         cursor: pointer;

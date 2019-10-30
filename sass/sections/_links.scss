@@ -1,15 +1,18 @@
 .link-table {
   text-align: center;
 
-  img {
+  .link-edition {
     display: none;
+    margin-left: 10px;
 
-    &:hover {
-      filter: invert(61%) sepia(71%) saturate(2298%) hue-rotate(346deg) brightness(98%) contrast(96%);
+    img {
+      &:hover {
+        filter: invert(61%) sepia(71%) saturate(2298%) hue-rotate(346deg) brightness(98%) contrast(96%);
+      }
     }
   }
 }
 
-.link-table tr:hover img {
+.link-table tr:hover .link-edition {
   display: inline-block;
 }

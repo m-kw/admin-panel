@@ -23,12 +23,12 @@ aside {
     margin-right: 80px;
   }
 
-  .toggle-menu {
-    filter: invert(0.5);
+  i {
+    color: #ffffff;
 
     &:hover {
-      filter: invert(1);
-      cursor: pointer;
+      background-color: inherit;
+      color: $btn-color-light;
     }
   }
 }
@@ -42,7 +42,7 @@ aside {
     }
 
     i {
-      
+
       &:hover {
         background-color: inherit;
       }
@@ -74,11 +74,12 @@ aside {
   display: none;
   flex-direction: column;
   position: absolute;
-  bottom: 0;
+  bottom: 60px;
 
   .icon-wrapper {
     display: flex;
     flex-direction: row;
+    padding: 0;
 
     &:hover {
       background-color: inherit;
@@ -87,13 +88,14 @@ aside {
     h2, p {
       margin: 0 10px;
     }
+  }
 
-    .icon {
-      filter: invert(0.5);
+  i {
+    color: $color-header;
 
-      &:hover {
-        filter: invert(1);
-      }
+    &:hover {
+      background-color: inherit;
+      border-left: 3px solid $btn-color-light;
     }
   }
 
