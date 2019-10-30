@@ -370,7 +370,8 @@ body {
 
 .row {
   background-color: #ffffff;
-  margin: 1px auto;
+  margin: 0 auto;
+  border-top: 1px solid #E3E3E3;
   padding: 15px;
   text-align: center;
 }
@@ -378,6 +379,10 @@ body {
 .section-title {
   margin-top: 15px;
   text-align: left;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 h1 {
@@ -627,6 +632,18 @@ form .row {
 
 .pagination a:active {
   background-color: #E3E3E3;
+}
+
+.status-tab {
+  width: 45px;
+  height: 25px;
+  background-color: #04AE00;
+  border-radius: 5px;
+}
+
+.status-tab p {
+  font-size: 14px;
+  font-weight: normal;
 }
 
 /* Sections */
@@ -883,10 +900,6 @@ aside {
   background-color: #ffffff;
 }
 
-.login .row {
-  border-top: 1px solid #E3E3E3;
-}
-
 .login .login-details form {
   display: -ms-flexbox;
   display: flex;
@@ -921,6 +934,77 @@ aside {
 .login .login-details form button {
   display: inline-block;
   padding: 0 15px;
+}
+
+.chat-message form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: relative;
+}
+
+.chat-message form > * {
+  border: 0;
+  padding: 0 0 0 10px;
+  border-radius: 5px;
+  border: none;
+  border: 1px solid #E3E3E3;
+  outline: none;
+  height: 35px;
+  margin: 10px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chat-message form input {
+  border: none;
+  padding-left: 10px;
+}
+
+.chat-message form input:focus {
+  outline: 1px solid #979797;
+  cursor: pointer;
+}
+
+.chat-message form button {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.chat-message form label {
+  width: 100%;
+}
+
+.chat-person {
+  min-height: 150px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.chat-person .manager-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+
+.chat-person p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.chat-person .status-tab p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 /* Pages/Views */

@@ -21,7 +21,8 @@ body {
 
 .row {
   background-color: $container-background;
-  margin: 1px auto;
+  margin: 0 auto;
+  border-top: 1px solid $body-background;
   padding: 15px;
   text-align: center;
 }
@@ -29,6 +30,8 @@ body {
 .section-title {
   margin-top: 15px;
   text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
