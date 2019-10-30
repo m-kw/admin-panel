@@ -40,6 +40,13 @@ aside {
     &:hover {
       border-left: 3px solid $btn-color-light;
     }
+
+    i {
+      
+      &:hover {
+        background-color: inherit;
+      }
+    }
   }
 }
 

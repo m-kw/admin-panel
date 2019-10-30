@@ -8,15 +8,10 @@ const select = {
 initPlugin();
 
 function initPlugin() {
-  console.log('plugin function on');
-
   const startDateInput = document.querySelectorAll(select.dateWidget.startDateInput);
-  console.log('startDateInput', startDateInput);
-
   const endDateInput = document.querySelectorAll(select.dateWidget.endDateInput);
 
   let today = new Date().toJSON().slice(0, 10);
-  console.log('today', today);
 
   flatpickr (startDateInput, {
     dateFormat: "d-m-Y",

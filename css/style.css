@@ -460,6 +460,7 @@ button:hover {
 
 i {
   padding: 5px;
+  margin-right: 10px;
 }
 
 i:hover {
@@ -671,6 +672,10 @@ aside {
 
 .nav-menu li:hover {
   border-left: 3px solid #F58220;
+}
+
+.nav-menu li i:hover {
+  background-color: inherit;
 }
 
 .manager h3 {
