@@ -20,21 +20,23 @@
       <div class="mobile-wrapper">
         <div class="menu">
           <ul class="nav-menu">
-            <li><a href="#"><i class="icon-general"></i>General</a></li>
-            <li><a href="#"><i class="icon-details"></i>Details</a></li>
-            <li><a href="#"><i class="icon-links"></i>Links</a></li>
-            <li><a href="#"><i class="icon-banners"></i>Banners</a></li>
-            <li><a href="#"><i class="icon-personaldata"></i>Personal data</a></li>
-            <li><a href="#"><i class="icon-payout"></i>Payout</a></li>
-            <li><a href="#"><i class="icon-postback"></i>Postback</a></li>
+            <li><a href="#general"><i class="icon-general"></i>General</a></li>
+            <li><a href="#details"><i class="icon-details"></i>Details</a></li>
+            <li><a href="#links"><i class="icon-links"></i>Links</a></li>
+            <li><a href="#banners"><i class="icon-banners"></i>Banners</a></li>
+            <li><a href="#personal-data"><i class="icon-personaldata"></i>Personal data</a></li>
+            <li><a href="#payout"><i class="icon-payout"></i>Payout</a></li>
+            <li><a href="#postback"><i class="icon-postback"></i>Postback</a></li>
           </ul>
         </div>
         <div class="manager">
           <h3>Your manager</h3>
-          <div class="manager-details">
-            <img src="images/manager.jpeg" class="manager-pic">
-            <p>Kristine</p>
-          </div>
+          <a href="#chat">
+            <div class="manager-details">
+              <img src="images/manager.jpeg" class="manager-pic">
+              <p>Kristine</p>
+            </div>
+          </a>
         </div>
         <div class="side-menu">
           <div class="icon-wrapper salary">
@@ -75,7 +77,7 @@
       </div>
 
       <div id="pages">
-        <section id="stats">
+        <section id="general">
           <div class="row section-title">
             <h2>General statistic</h2>
           </div>
@@ -270,7 +272,7 @@
           </div>
         </section>
 
-        <section id="persona-data">
+        <section id="personal-data">
           <div class="row section-title">
             <h2>Personal data</h2>
           </div>
@@ -534,55 +536,62 @@
         </section>
       </div>
 
-      <div id="popups">
-        <section id="login" class="login">
-          <div class="row section-title">
-            <h2>login</h2>
-          </div>
-          <div class="row login-details">
-            <form>
-              <label>
-                <i class="icon-personaldata"></i>
-                <input type="text" name="login-name" placeholder="login name">
-              </label>
-              <label>
-                <i class="icon-password"></i>
-                <input type="password" name="password" placeholder="password">
-              </label>
-              <button type="submit">Enter</button>
-            </form>
-          </div>
-        </section>
+    </div>
 
-        <section id="chat">
-          <div class="row section-title">
-            <h2>online chat with your personal manager</h2>
-            <i class="icon-close"></i>
-          </div>
-          <div class="row chat-person">
-            <img src="images/manager.jpeg" class="manager-pic">
-            <div class="manager-status">
-              <p>Kristine</p>
-              <div class="status-tab">
-                <p>online</p>
+    <div id="popups">
+      <section id="login" class="login">
+        <div class="row section-title">
+          <h2>login</h2>
+        </div>
+        <div class="row login-details">
+          <form>
+            <label>
+              <i class="icon-personaldata"></i>
+              <input type="text" name="login-name" placeholder="login name">
+            </label>
+            <label>
+              <i class="icon-password"></i>
+              <input type="password" name="password" placeholder="password">
+            </label>
+            <button type="submit">Enter</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="chat">
+        <div class="chat-wrapper">
+          <div class="chat-box">
+            <div class="row section-title">
+              <h2>online chat with your personal manager</h2>
+              <i class="icon-close"></i>
+            </div>
+            <div class="row chat-person">
+              <img src="images/manager.jpeg" class="manager-pic">
+              <div class="manager-status">
+                <p>Kristine</p>
+                <div class="status-tab active">
+                  <p>online</p>
+                </div>
+                <div class="status-tab-offline">
+                  <p>offline</p>
+                </div>
               </div>
             </div>
+            <div class="row chat">
+              hello hello
+            </div>
+            <div class="row chat-message">
+              <form>
+                <label>
+                  <i class="icon-message"></i>
+                  <input type="text" name="message" placeholder="Enter the message">
+                </label>
+                <button type="submit">Send</button>
+              </form>
+            </div>
           </div>
-          <div class="row chat">
-            hello hello
-          </div>
-          <div class="row chat-message">
-            <form>
-              <label>
-                <i class="icon-message"></i>
-                <input type="text" name="message">
-              </label>
-              <button type="submit">Send</button>
-            </form>
-          </div>
-        </section>
-      </div>
-
+        </div>
+      </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>

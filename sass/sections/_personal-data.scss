@@ -1,1 +1,7 @@
+#personal-data {
+  display: none;
 
+  &.active {
+    display: block;
+  }
+}

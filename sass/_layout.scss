@@ -60,3 +60,11 @@ a {
     color: $orange-hover;
   }
 }
+
+#links, #banners, #payout {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

@@ -1,3 +1,11 @@
+#details {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
 .detail-table {
   overflow-x: auto;
 

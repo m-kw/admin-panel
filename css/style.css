@@ -414,6 +414,14 @@ a:hover {
   color: #FFA200;
 }
 
+#links, #banners, #payout {
+  display: none;
+}
+
+#links.active, #banners.active, #payout.active {
+  display: block;
+}
+
 /* Components */
 /* Buttons */
 button {
@@ -644,6 +652,21 @@ form .row {
 .status-tab p {
   font-size: 14px;
   font-weight: normal;
+  margin-top: 5px;
+}
+
+.status-tab-offline {
+  width: 45px;
+  height: 25px;
+  background-color: #04AE00;
+  border-radius: 5px;
+  background-color: #E3E3E3;
+}
+
+.status-tab-offline p {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 5px;
 }
 
 /* Sections */
@@ -804,6 +827,14 @@ aside {
   margin: 0 10px;
 }
 
+#general {
+  display: none;
+}
+
+#general.active {
+  display: block;
+}
+
 .calendar {
   display: -ms-flexbox;
   display: flex;
@@ -878,6 +909,22 @@ aside {
   margin-left: 50px;
 }
 
+#personal-data {
+  display: none;
+}
+
+#personal-data.active {
+  display: block;
+}
+
+#details {
+  display: none;
+}
+
+#details.active {
+  display: block;
+}
+
 .detail-table {
   overflow-x: auto;
 }
@@ -893,6 +940,14 @@ aside {
 
 .detail-table table th:hover i {
   display: inline-block;
+}
+
+#login {
+  display: none;
+}
+
+#login.active {
+  display: block;
 }
 
 .login {
@@ -936,6 +991,29 @@ aside {
   padding: 0 15px;
 }
 
+#chat {
+  display: none;
+}
+
+#chat.active {
+  display: block;
+}
+
+.chat-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.chat-wrapper .chat-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+}
+
 .chat-message form {
   display: -ms-flexbox;
   display: flex;
@@ -976,6 +1054,10 @@ aside {
   width: 100%;
 }
 
+.chat-message form input {
+  width: 100%;
+}
+
 .chat-person {
   min-height: 150px;
   display: -ms-flexbox;
@@ -1001,10 +1083,18 @@ aside {
   margin-bottom: 5px;
 }
 
-.chat-person .status-tab p {
+.chat-person .status-tab, .chat-person .status-tab-offline {
+  display: none;
+}
+
+.chat-person .status-tab p, .chat-person .status-tab-offline p {
   margin-top: 5px;
   font-size: 14px;
   font-weight: normal;
+}
+
+.chat-person .status-tab.active, .chat-person .status-tab-offline.active {
+  display: block;
 }
 
 /* Pages/Views */

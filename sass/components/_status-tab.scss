@@ -1,11 +1,8 @@
 .status-tab {
-  width: 45px;
-  height: 25px;
-  background-color: #04AE00;
-  border-radius: 5px;
+  @include status-tab;
+}
 
-  p {
-    font-size: 14px;
-    font-weight: normal;
-  }
+.status-tab-offline {
+  @include status-tab;
+  background-color: $body-background;
 }

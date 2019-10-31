@@ -1,9 +1,37 @@
+#chat {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.chat-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  .chat-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+
+  }
+}
+
 .chat-message {
 
   form {
     @include popup-form;
 
     label {
+      width: 100%;
+    }
+
+    input {
       width: 100%;
     }
   }
@@ -31,11 +59,17 @@
     margin-bottom: 5px;
   }
 
-  .status-tab {
+  .status-tab, .status-tab-offline {
+    display: none;
+
     p {
       margin-top: 5px;
       font-size: 14px;
       font-weight: normal;
+    }
+
+    &.active {
+      display: block;
     }
   }
 

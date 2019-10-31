@@ -1,6 +1,18 @@
+#login {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
 .login {
   width: 700px;
   background-color: #ffffff;
+  // position: absolute;
+  // top: 5%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
 
   .login-details {
 
