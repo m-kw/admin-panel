@@ -11,6 +11,11 @@ const select = {
     chatLink: '#chat-link',
     chatWindow: '#chat',
     close: '.icon-close',
+  },
+  topMenu: {
+    exitIcon: '.quit',
+    cancelButton: '.logout-box .cancel',
+    quitButton: '.logout-box .quit',
   }
 }
 
@@ -21,6 +26,7 @@ function init() {
   menuClickHandler();
   addClickListenersToLinks();
   exitChat();
+  cancelQuit();
 }
 
 function initDatePicker() {
@@ -50,6 +56,7 @@ function menuClickHandler() {
   const mobileMenu = document.querySelector(select.menu.mobileMenu)
 
   menuWidget.addEventListener('click', function() {
+    event.preventDefault();
     console.log('menu clicked');
 
     mobileMenu.classList.toggle('active');
@@ -93,6 +100,17 @@ function exitChat() {
   const closeIcon = document.querySelector(select.chat.close);
 
   closeIcon.addEventListener('click', function() {
+    event.preventDefault();
     makeSectionUnactive();
+  })
+}
+
+function cancelQuit() {
+  const cancelButton = document.querySelector(select.topMenu.cancelButton);
+  const logout = document.querySelector('#logout');
+
+  cancelButton.addEventListener('click', function() {
+    event.preventDefault();
+    logout.classList.remove('active');
   })
 }

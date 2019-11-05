@@ -10,10 +10,12 @@ button {
   margin: 20px auto;
   color: $body-background;
   background-color: $btn-color-light;
+  outline: none;
 
   &:hover {
     cursor: pointer;
     background-color: $orange-hover;
+    outline: none;
   }
 }
 
@@ -23,6 +25,7 @@ button {
   &:hover {
     background-color: $btn-dark-hover;
     cursor: pointer;
+    outline: none;
   }
 }
 
