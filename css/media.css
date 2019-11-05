@@ -3,7 +3,7 @@
     width: 100%;
     height: 50px;
     padding: 5px;
-    z-index: 5;
+    z-index: 0;
   }
   aside .mobile-wrapper {
     display: none;
@@ -42,6 +42,7 @@
   .container {
     width: 100%;
     left: 0;
+    z-index: -1;
   }
   .top-menu-wrapper {
     display: none;
@@ -67,6 +68,9 @@
   }
   .calendar button {
     margin: 0;
+  }
+  .login-box .login-details form {
+    flex-direction: column;
   }
 }
 
