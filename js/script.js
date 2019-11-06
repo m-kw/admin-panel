@@ -39,13 +39,13 @@ function initDatePicker() {
   console.log('today', today);
 
   flatpickr (startDateInput, {
-    dateFormat: "d-m-Y",
+    dateFormat: "Y-m-d",
     defaultDate: today,
     maxDate: today,
   });
 
   flatpickr(endDateInput, {
-    dateFormat: "d-m-Y",
+    dateFormat: "Y-m-d",
     defaultDate: today,
     maxDate: today,
     locale: {
