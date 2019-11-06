@@ -35,17 +35,17 @@ function initDatePicker() {
   const startDateInput = document.querySelectorAll(select.dateWidget.startDateInput);
   const endDateInput = document.querySelectorAll(select.dateWidget.endDateInput);
 
-  let today = new Date().toJSON().slice(0, 10);
+  let today = new Date;
   console.log('today', today);
 
   flatpickr (startDateInput, {
-    dateFormat: "Y-m-d",
+    dateFormat: "d-m-Y",
     defaultDate: today,
     maxDate: today,
   });
 
   flatpickr(endDateInput, {
-    dateFormat: "Y-m-d",
+    dateFormat: "d-m-Y",
     defaultDate: today,
     maxDate: today,
     locale: {
@@ -119,11 +119,18 @@ function cancelQuit() {
 }
 
 function closeModal () {
-  document.querySelector('.popup-wrapper').addEventListener('click', function(e) {
-    if (e.target === this) {
-      makeSectionUnactive();
-    }
-  });
+  const overlays = document.querySelectorAll('.popup-wrapper');
+  const loginOverlay = document.querySelector('#login .popup-wrapper');
+
+  for (let overlay of overlays) {
+    overlay.addEventListener('click', function(e) {
+      if (e.target === loginOverlay) {
+        console.log('fill in the form');
+      } else if (e.target === this) {
+        makeSectionUnactive();
+      }
+    });
+  }
 
   document.addEventListener('keyup', function(e) {
     if (e.keyCode === 27) {
@@ -166,5 +173,5 @@ function createChart() {
             hidden: true,
         }]
     },
-});
+  });
 }
