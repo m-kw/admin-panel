@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin-panel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/css/Glyphter.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <aside class="sidebar">
+      <div class="intro">
+        <h1 class="page-title">Just do it</h1>
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="mobile-wrapper">
+        <div class="menu">
+          <ul class="nav-menu">
+            <li><a href="#general"><i class="icon-general"></i>General</a></li>
+            <li><a href="#details"><i class="icon-details"></i>Details</a></li>
+            <li><a href="#links"><i class="icon-links"></i>Links</a></li>
+            <li><a href="#banners"><i class="icon-banners"></i>Banners</a></li>
+            <li><a href="#personal-data"><i class="icon-personaldata"></i>Personal data</a></li>
+            <li><a href="#payout"><i class="icon-payout"></i>Payout</a></li>
+            <li><a href="#postback"><i class="icon-postback"></i>Postback</a></li>
+          </ul>
+        </div>
+        <div class="manager">
+          <h3>Your manager</h3>
+          <a href="#chat">
+            <div class="manager-details">
+              <img src="images/manager.jpeg" class="manager-pic" alt="manager">
+              <p>Kristine</p>
+            </div>
+          </a>
+        </div>
+        <div class="side-menu">
+          <div class="icon-wrapper salary">
+            <i class="icon-wallet"></i>
+            <h2>$1,500.00</h2>
+            <i class="icon-arrow-down-small"></i>
+          </div>
+          <i class="icon-notification"></i>
+          <div class="icon-wrapper employee">
+            <i class="icon-profile"></i>
+            <p>Leonardo Dicaprio</p>
+          </div>
+          <a href="#logout"><i class="icon-quit quit"></i></a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="container">
+
+      <div class="top-menu-wrapper">
+        <div class="top-menu">
+          <div class="icon-wrapper">
+            <img src="images/icons/wallet.svg" class="icon" alt="wallet">
+            <h2 class="salary">$1,500.00</h2>
+            <img src="images/icons/arrow-down-small.svg" class="icon" alt="arrow-down-small">
+          </div>
+          <div class="icon-wrapper">
+            <img src="images/icons/notification.svg" class="icon" alt="notification">
+          </div>
+          <div class="icon-wrapper">
+            <img src="images/icons/profile.svg" class="icon" alt="profile">
+            <p class="empoyee">Leonardo Dicaprio</p>
+          </div>
+          <a href="#logout">
+            <div class="icon-wrapper quit">
+              <img src="images/icons/quit.svg" class="icon" alt="quit">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div id="pages">
+        <section id="general">
+          <div class="row section-title">
+            <h2>General statistic</h2>
+          </div>
+          <div class="row calendar">
+            <div class="date-picker">
+              <input type="text" name="start-date">
+              <input type="text" name="end-date">
+              <img src="images/icons/calendar.svg" class="icon" alt="calendar">
+            </div>
+            <button><img src="images/icons/refresh.svg" class="icon" alt="refresh"></button>
+          </div>
+          <div class="row chart">
+            <table>
+              <tr>
+                <td>
+                  <h3>Visit signups</h3>
+                  <p id="signups">124</p>
+                </td>
+                <td>
+                  <h3>Net deposit</h3>
+                  <p id="deposit">564</P>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>FTD</h3>
+                  <p id="FTP">445</p>
+                </td>
+                <td>
+                  <h3>Turn over</h3>
+                  <p id="turn-over">435<p>
+                </td>
+              </tr>
+            </table>
+            <h3 class="chart-heading">Earnings chart</h3>
+            <div class="tab">
+              <div class="circle"></div>
+              <p>Signups</p>
+            </div>
+            <div class="tab">
+              <div class="circle-orange"></div>
+              <p>FTD</p>
+            </div>
+            <div class="tab">
+              <div class="circle-green"></div>
+              <p>Earned</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="links">
+          <div class="row section-title">
+            <h2>Links</h2>
+          </div>
+          <div class="row link-table">
+            <button>+ add new</button>
+            <table>
+              <tr>
+                <td><h3>Home page</h3></td>
+                <td>
+                  <a href="#">http://homepage.com</a>
+                  <div class="link-edition">
+                    <img src="images/icons/links.svg" class="icon" alt="links">
+                    <img src="images/icons/trash.svg" class="icon" alt="trash">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>Home page</h3></td>
+                <td>
+                  <a href="#">http://homepage.com</a>
+                  <div class="link-edition">
+                    <img src="images/icons/links.svg" class="icon" alt="links">
+                    <img src="images/icons/trash.svg" class="icon" alt="trash">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>Home page</h3></td>
+                <td>
+                  <a href="#">http://homepage.com</a>
+                  <div class="link-edition">
+                    <img src="images/icons/links.svg" class="icon" alt="links">
+                    <img src="images/icons/trash.svg" class="icon" alt="trash">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>Home page</h3></td>
+                <td>
+                  <a href="#">http://homepage.com</a>
+                  <div class="link-edition">
+                    <img src="images/icons/links.svg" class="icon" alt="links">
+                    <img src="images/icons/trash.svg" class="icon" alt="trash">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>Home page</h3></td>
+                <td>
+                  <a href="#">http://homepage.com</a>
+                  <div class="link-edition">
+                    <img src="images/icons/links.svg" class="icon" alt="links">
+                    <img src="images/icons/trash.svg" class="icon" alt="trash">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>Home page</h3></td>
+                <td>
+                  <a href="#">http://homepage.com</a>
+                  <div class="link-edition">
+                    <img src="images/icons/links.svg" class="icon" alt="links">
+                    <img src="images/icons/trash.svg" class="icon" alt="trash">
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <button>+ add new</button>
+          </div>
+        </section>
+
+        <section id="banners">
+          <div class="row section-title">
+            <h2>Banners</h2>
+          </div>
+          <div class="row link-table">
+            <button>+ add new</button>
+            <table>
+              <tr>
+                <td><h3>Banner main</h3></td>
+                <td>
+                  <a href="#">http://website.com/bannermain.gif</a>
+                  <div class="link-edition">
+                    <img src="images/icons/links.svg" class="icon" alt="links">
+                    <img src="images/icons/trash.svg" class="icon" alt="trash">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>Signup banner</h3></td>
+                <td>
+                  <a href="#">http://website.com/bannermain.gif</a>
+                  <div class="link-edition">
+                    <img src="images/icons/links.svg" class="icon" alt="links">
+                    <img src="images/icons/trash.svg" class="icon" alt="trash">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>Banner left side</h3></td>
+                <td>
+                  <a href="#">http://website.com/bannermain.gif</a>
+                  <div class="link-edition">
+                    <img src="images/icons/links.svg" class="icon" alt="links">
+                    <img src="images/icons/trash.svg" class="icon" alt="trash">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>Vertical banner</h3></td>
+                <td>
+                  <a href="#">http://website.com/bannermain.gif</a>
+                  <div class="link-edition">
+                    <img src="images/icons/links.svg" class="icon" alt="links">
+                    <img src="images/icons/trash.svg" class="icon" alt="trash">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>Front banner</h3></td>
+                <td>
+                  <a href="#">http://website.com/bannermain.gif</a>
+                  <div class="link-edition">
+                    <img src="images/icons/links.svg" class="icon" alt="links">
+                    <img src="images/icons/trash.svg" class="icon" alt="trash">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><h3>Horizontal banner</h3></td>
+                <td>
+                  <a href="#">http://website.com/bannermain.gif</a>
+                  <div class="link-edition">
+                    <img src="images/icons/links.svg" class="icon" alt="links">
+                    <img src="images/icons/trash.svg" class="icon" alt="trash">
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <button>+ add new</button>
+          </div>
+        </section>
+
+        <section id="personal-data">
+          <div class="row section-title">
+            <h2>Personal data</h2>
+          </div>
+          <form>
+            <div class="row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name">
+              </div>
+
+              <div class="form-field">
+                <label for="surname">Surname</label>
+                <input type="text" name="surname">
+              </div>
+
+              <div class="form-field">
+                <label for="email">E-mail</label>
+                <input type="email" name="email">
+              </div>
+
+              <div class="form-field">
+                <label for="phone">Phone number</label>
+                <input type="text" name="phone">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-field">
+                <label for="skype">Skype</label>
+                <input type="text" name="skype">
+              </div>
+
+              <div class="form-field">
+                <label for="icq">ICQ</label>
+                <input type="text" name="icq">
+              </div>
+
+              <div class="form-field">
+                <label for="msn">MSN</label>
+                <input type="text" name="msn">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-field">
+                <label for="wallet">Wallet</label>
+                <input type="number" name="wallet">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-field">
+                <label for="password">Password</label>
+                <input type="password" name="password">
+              </div>
+
+              <div class="form-field">
+                <label for="repaet">Repeat</label>
+                <input type="password" name="repeat">
+              </div>
+            </div>
+            <div class="row">
+              <button>Save</button>
+            </div>
+          </form>
+        </section>
+
+        <section id="details">
+          <div class="row section-title">
+            <h2>Detail statistic</h2>
+          </div>
+          <div class="row calendar">
+            <div class="date-picker">
+              <input type="text" name="start-date">
+              <input type="text" name="end-date">
+              <img src="images/icons/calendar.svg" class="icon" alt="calendar">
+            </div>
+            <button><img src="images/icons/refresh.svg" class="icon" alt="refresh"></button>
+          </div>
+          <div class="row detail-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tracker name</th>
+                  <th>Initiated date</th>
+                  <th>Visits</th>
+                  <th>Unique</th>
+                  <th>Signups</th>
+                  <th>FTD</th>
+                  <th>Depositors</th>
+                  <th>Deposits($)
+                    <i class="icon-arrow-up-small"></i>
+                    <i class="icon-arrow-down-small"></i>
+                  </th>
+                  <th>Payout($)
+                    <i class="icon-arrow-up-small"></i>
+                    <i class="icon-arrow-down-small"></i>
+                  </th>
+                  <th>Turnover</th>
+                  <th>Deal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>aff/sam_test</td>
+                  <td>17/08/02 (12:58)</td>
+                  <td>232</td>
+                  <td>114</td>
+                  <td>12</td>
+                  <td>6</td>
+                  <td>3</td>
+                  <td>34,425.00</td>
+                  <td>234.00</td>
+                  <td>421,342.00</td>
+                  <td>cpl (200)</td>
+                </tr>
+                <tr>
+                  <td>aff/sam_test</td>
+                  <td>17/08/02 (12:58)</td>
+                  <td>232</td>
+                  <td>114</td>
+                  <td>12</td>
+                  <td>6</td>
+                  <td>3</td>
+                  <td>34,425.00</td>
+                  <td>234.00</td>
+                  <td>421,342.00</td>
+                  <td>cpl (200)</td>
+                </tr>
+                <tr>
+                  <td>aff/sam_test</td>
+                  <td>17/08/02 (12:58)</td>
+                  <td>232</td>
+                  <td>114</td>
+                  <td>12</td>
+                  <td>6</td>
+                  <td>3</td>
+                  <td>34,425.00</td>
+                  <td>234.00</td>
+                  <td>421,342.00</td>
+                  <td>cpl (200)</td>
+                </tr>
+                <tr>
+                  <td>aff/sam_test</td>
+                  <td>17/08/02 (12:58)</td>
+                  <td>232</td>
+                  <td>114</td>
+                  <td>12</td>
+                  <td>6</td>
+                  <td>3</td>
+                  <td>34,425.00</td>
+                  <td>234.00</td>
+                  <td>421,342.00</td>
+                  <td>cpl (200)</td>
+                </tr>
+                <tr>
+                  <td>aff/sam_test</td>
+                  <td>17/08/02 (12:58)</td>
+                  <td>232</td>
+                  <td>114</td>
+                  <td>12</td>
+                  <td>6</td>
+                  <td>3</td>
+                  <td>34,425.00</td>
+                  <td>234.00</td>
+                  <td>421,342.00</td>
+                  <td>cpl (200)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row pagination">
+            <i class="icon-arrow-left"></i>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <i class="icon-arrow-right"></i>
+          </div>
+        </section>
+
+        <section id="payout">
+          <div class="row section-title">
+            <h2>Payout history</h2>
+          </div>
+          <div class="row calendar">
+            <div class="date-picker">
+              <input type="text" name="start-date">
+              <input type="text" name="end-date">
+              <img src="images/icons/calendar.svg" class="icon" alt="calendar">
+            </div>
+            <button><img src="images/icons/refresh.svg" class="icon" alt="refresh"></button>
+          </div>
+          <div class="row detail-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date
+                    <i class="icon-arrow-up-small"></i>
+                    <i class="icon-arrow-down-small"></i>
+                  </th>
+                  <th>Amount($)
+                    <i class="icon-arrow-up-small"></i>
+                    <i class="icon-arrow-down-small"></i>
+                  </th>
+                  <th>Deal</th>
+                  <th>Account</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>17/08/02 (12:58)</td>
+                  <td>43,425.00</td>
+                  <td>cpl (200)</td>
+                  <td>bank</td>
+                </tr>
+                <tr>
+                  <td>17/08/02 (12:58)</td>
+                  <td>43,425.00</td>
+                  <td>cpl (200)</td>
+                  <td>bank</td>
+                </tr>
+                <tr>
+                  <td>17/08/02 (12:58)</td>
+                  <td>43,425.00</td>
+                  <td>cpl (200)</td>
+                  <td>bank</td>
+                </tr>
+                <tr>
+                  <td>17/08/02 (12:58)</td>
+                  <td>43,425.00</td>
+                  <td>cpl (200)</td>
+                  <td>bank</td>
+                </tr>
+                <tr>
+                  <td>17/08/02 (12:58)</td>
+                  <td>43,425.00</td>
+                  <td>cpl (200)</td>
+                  <td>bank</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row pagination">
+            <i class="icon-arrow-left"></i>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <i class="icon-arrow-right"></i>
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+    <div id="popups">
+      <section id="login">
+        <div class="popup-wrapper">
+          <div class="login-box">
+            <div class="row section-title">
+              <h2>login</h2>
+            </div>
+            <div class="row login-details">
+              <form>
+                <label>
+                  <i class="icon-personaldata"></i>
+                  <input type="text" name="login-name" placeholder="login name">
+                </label>
+                <label>
+                  <i class="icon-password"></i>
+                  <input type="password" name="password" placeholder="password">
+                </label>
+                <button type="submit">Enter</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="chat">
+        <div class="popup-wrapper">
+          <div class="chat-box">
+            <div class="row section-title">
+              <h2>online chat with your personal manager</h2>
+              <i class="icon-close"></i>
+            </div>
+            <div class="row chat-person">
+              <img src="images/manager.jpeg" class="manager-pic" alt="manager">
+              <div class="manager-status">
+                <p>Kristine</p>
+                <div class="status-tab active">
+                  <p>online</p>
+                </div>
+                <div class="status-tab-offline">
+                  <p>offline</p>
+                </div>
+              </div>
+            </div>
+            <div class="row chat">
+              hello hello
+            </div>
+            <div class="row chat-message">
+              <form>
+                <label>
+                  <i class="icon-message"></i>
+                  <input type="text" name="message" placeholder="Enter the message">
+                </label>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="logout">
+        <div class="popup-wrapper">
+          <div class="logout-box">
+            <div class="row section-title">
+              <h2>Do you really want to quit?</h2>
+            </div>
+            <div class="row">
+              <button type="reset" class="btn-dark cancel">Cancel</button>
+              <a href="#login" class="btn"><p>Quit</p></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
