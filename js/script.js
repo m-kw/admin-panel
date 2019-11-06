@@ -27,6 +27,7 @@ function init() {
   addClickListenersToLinks();
   exitChat();
   cancelQuit();
+  closeModal();
 }
 
 function initDatePicker() {
@@ -34,12 +35,13 @@ function initDatePicker() {
   const endDateInput = document.querySelectorAll(select.dateWidget.endDateInput);
 
   let today = new Date().toJSON().slice(0, 10);
+  console.log('today', today);
 
   flatpickr (startDateInput, {
     dateFormat: "d-m-Y",
     defaultDate: today,
     maxDate: today,
-  })
+  });
 
   flatpickr(endDateInput, {
     dateFormat: "d-m-Y",
@@ -48,7 +50,7 @@ function initDatePicker() {
     locale: {
       firstDayOfWeek: 1
     },
-  })
+  });
 }
 
 function menuClickHandler() {
@@ -102,7 +104,7 @@ function exitChat() {
   closeIcon.addEventListener('click', function() {
     event.preventDefault();
     makeSectionUnactive();
-  })
+  });
 }
 
 function cancelQuit() {
@@ -112,5 +114,19 @@ function cancelQuit() {
   cancelButton.addEventListener('click', function() {
     event.preventDefault();
     logout.classList.remove('active');
-  })
+  });
+}
+
+function closeModal () {
+  document.querySelector('.popup-wrapper').addEventListener('click', function(e) {
+    if (e.target === this) {
+      makeSectionUnactive();
+    }
+  });
+
+  document.addEventListener('keyup', function(e) {
+    if (e.keyCode === 27) {
+      makeSectionUnactive();
+    }
+  });
 }

@@ -90,3 +90,22 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+@mixin button {
+  display: block;
+  width: auto;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin: 20px auto;
+  color: $body-background;
+  background-color: $btn-color-light;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $orange-hover;
+    outline: none;
+  }
+}

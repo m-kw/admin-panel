@@ -98,6 +98,12 @@
     }
   }
 
+  .logout-box {
+    .row {
+      flex-direction: column;
+    }
+  }
+
 }
 
 @media (max-width: 833px) {

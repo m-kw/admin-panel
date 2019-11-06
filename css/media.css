@@ -1,94 +1,24 @@
-@media (max-width: 691px) {
-  aside {
-    width: 100%;
-    height: 50px;
-    padding: 5px;
-    z-index: 0;
-  }
-  aside .mobile-wrapper {
-    display: none;
-    height: 100%;
-  }
-  aside .mobile-wrapper.active {
-    display: block;
-    position: fixed;
-    background-color: inherit;
-    top: 50px;
-    left: 0;
-    padding: 10px;
-  }
-  aside .intro {
-    position: absolute;
-    width: 100%;
-    margin: 10px 0;
-    left: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  aside .nav-menu {
-    margin-top: 0;
-  }
-  aside .nav-menu li {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  aside .side-menu {
-    display: flex;
-  }
-  aside .side-menu .icon-wrapper {
-    height: auto;
-  }
-  .container {
-    width: 100%;
-    left: 0;
-    z-index: -1;
-  }
-  .top-menu-wrapper {
-    display: none;
-  }
-  form .form-field {
-    flex-direction: column;
-  }
-  form .form-field label, form .form-field input {
-    margin: 0 auto;
-  }
-  form .form-field label {
-    text-align: center;
-  }
-  .link-table table, .chart table {
-    width: 95%;
-  }
-  .link-table table tr, .chart table tr {
-    display: flex;
-    flex-direction: column;
-  }
-  .link-table table td, .chart table td {
-    text-align: center;
-  }
-  .calendar button {
-    margin: 0;
-  }
-  .login-box .login-details form {
-    flex-direction: column;
-  }
-}
+@media (max-width: 691px) { aside { width: 100%; height: 50px; padding: 5px; z-index: 0; }
+  aside .mobile-wrapper { display: none; height: 100%; }
+  aside .mobile-wrapper.active { display: block; position: fixed; background-color: inherit; top: 50px; left: 0; padding: 10px; }
+  aside .intro { position: absolute; width: 100%; margin: 10px 0; left: 0; display: flex; justify-content: space-around; align-items: center; }
+  aside .nav-menu { margin-top: 0; }
+  aside .nav-menu li { padding-top: 0; padding-bottom: 0; }
+  aside .side-menu { display: flex; }
+  aside .side-menu .icon-wrapper { height: auto; }
+  .container { width: 100%; left: 0; z-index: -1; }
+  .top-menu-wrapper { display: none; }
+  form .form-field { flex-direction: column; }
+  form .form-field label, form .form-field input { margin: 0 auto; }
+  form .form-field label { text-align: center; }
+  .link-table table, .chart table { width: 95%; }
+  .link-table table tr, .chart table tr { display: flex; flex-direction: column; }
+  .link-table table td, .chart table td { text-align: center; }
+  .calendar button { margin: 0; }
+  .login-box .login-details form { flex-direction: column; }
+  .logout-box .row { flex-direction: column; } }
 
-@media (max-width: 833px) {
-  .calendar {
-    align-items: center;
-  }
-  .calendar .date-picker {
-    display: flex;
-    flex-direction: column;
-  }
-  .calendar .date-picker input {
-    border: none;
-    border-bottom: 1px solid #E3E3E3;
-  }
-  .calendar .date-picker .icon {
-    margin: 5px auto;
-  }
-}
-
-/*# sourceMappingURL=media.css.map */
+@media (max-width: 833px) { .calendar { align-items: center; }
+  .calendar .date-picker { display: flex; flex-direction: column; }
+  .calendar .date-picker input { border: none; border-bottom: 1px solid #E3E3E3; }
+  .calendar .date-picker .icon { margin: 5px auto; } }

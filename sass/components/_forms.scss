@@ -9,6 +9,10 @@ form {
     label {
       text-align: left;
       min-width: 150px;
+
+      p {
+        @include h3;
+      }
     }
 
     input {
