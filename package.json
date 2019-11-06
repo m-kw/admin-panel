@@ -30,6 +30,7 @@
     "browser-sync": "^2.26.7",
     "chart.js": "^2.9.2",
     "globstar": "^1.0.0",
+    "copyfiles": "^2.1.1",
     "imagemin-cli": "^5.0.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.12.0",
