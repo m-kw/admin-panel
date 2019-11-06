@@ -22,12 +22,19 @@ const select = {
 init();
 
 function init() {
+  openSite();
   initDatePicker();
   menuClickHandler();
   addClickListenersToLinks();
   exitChat();
   cancelQuit();
   closeModal();
+}
+
+function openSite() {
+  const loginPage = document.querySelector('#login');
+
+  loginPage.classList.add('active');
 }
 
 function initDatePicker() {
